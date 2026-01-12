@@ -85,7 +85,7 @@ Jika tidak ada karakter yang dipilih, sistem akan menampilkan peringatan.
 
 ---
 
-##3️⃣ Proses Generate Password
+### 3️⃣ Proses Generate Password
 Password dibuat menggunakan perulangan dan angka acak:
 
 ```javasript
@@ -101,7 +101,7 @@ Hasil password langsung ditampilkan ke input field.
 
 ---
 
-##4️⃣ Notifikasi Berhasil Generate
+### 4️⃣ Notifikasi Berhasil Generate
 Setelah password berhasil dibuat, sistem menampilkan toast notification:
 
 ```javascript
@@ -112,7 +112,7 @@ new bootstrap.Toast(
 
 ---
 
-##5️⃣ Copy Password ke Clipboard
+### 5️⃣ Copy Password ke Clipboard
 Saat tombol copy ditekan:
 
 ```javascript
@@ -130,7 +130,7 @@ new bootstrap.Toast(
 
 ---
 
-##🔒 Keamanan
+## 🔒 Keamanan
 
 - Password tidak disimpan
 - Tidak ada pengiriman data ke server
@@ -141,7 +141,7 @@ Aman digunakan untuk keperluan pribadi maupun profesional.
 
 ---
 
-##⭐ Dukungan
+## ⭐ Dukungan
 
 Jika project ini bermanfaat:
 
@@ -151,7 +151,7 @@ Jika project ini bermanfaat:
 
 ---
 
-##📌 Catatan
+## 📌 Catatan
 
 Project ini cocok untuk:
 
@@ -163,4 +163,4 @@ Project ini cocok untuk:
 
 ---
 
-© Copyright 2026 By Bhycero Group
+# © Copyright 2026 By Bhycero Group
