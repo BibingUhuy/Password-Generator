@@ -81,6 +81,86 @@ if (numbers) chars += "0123456789";
 if (symbols) chars += "!@#$%^&*()_+{}[]<>?";
 ```
 
+Jika tidak ada karakter yang dipilih, sistem akan menampilkan peringatan.
+
+---
+
+##3️⃣ Proses Generate Password
+Password dibuat menggunakan perulangan dan angka acak:
+
+```javasript
+let password = "";
+for (let i = 0; i < length; i++) {
+    password += chars.charAt(
+        Math.floor(Math.random() * chars.length)
+    );
+}
+```
+
+Hasil password langsung ditampilkan ke input field.
+
+---
+
+##4️⃣ Notifikasi Berhasil Generate
+Setelah password berhasil dibuat, sistem menampilkan toast notification:
+
+```javascript
+new bootstrap.Toast(
+    document.getElementById('toastGenerate')
+).show();
+```
+
+---
+
+##5️⃣ Copy Password ke Clipboard
+Saat tombol copy ditekan:
+
+```javascript
+result.select();
+document.execCommand("copy");
+```
+
+Kemudian ditampilkan notifikasi sukses:
+
+```javascript
+new bootstrap.Toast(
+    document.getElementById('toastCopy')
+).show();
+```
+
+---
+
+##🔒 Keamanan
+
+- Password tidak disimpan
+- Tidak ada pengiriman data ke server
+- Tidak menggunakan cookies atau tracking
+- 100% client-side
+  
+Aman digunakan untuk keperluan pribadi maupun profesional.
+
+---
+
+##⭐ Dukungan
+
+Jika project ini bermanfaat:
+
+- Beri ⭐ pada repository
+- Gunakan dan modifikasi sesuai kebutuhan
+- Sertakan kredit jika dibagikan ulang
+
+---
+
+##📌 Catatan
+
+Project ini cocok untuk:
+
+- Tool online
+- Utility website
+- Edukasi JavaScript
+- White-label product
+- SaaS sederhana
+
 ---
 
 © Copyright 2026 By Bhycero Group
