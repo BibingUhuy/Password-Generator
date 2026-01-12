@@ -34,6 +34,7 @@
 <style>
 :root {
     --ungu: #6f42c1;
+    --ungu-gelap: #4b1fa6;
 }
 body {
     background: radial-gradient(circle at top, #7b4dff, #4b1fa6);
@@ -46,6 +47,15 @@ body {
 .text-purple {
     color: var(--ungu);
 }
+
+.apk {
+    color: var(--ungu-gelap);
+}
+
+.apk:hover {
+    color: var(--ungu);
+}
+
 .card {
     border-radius: 22px;
     border: none;
@@ -139,12 +149,16 @@ body {
                     <i class="bi bi-lightning-fill"></i> Generate Password
                 </button>
 
-                <div class="input-group input-group-lg">
+                <div class="input-group input-group-lg mb-3">
                     <input type="text" id="result" class="form-control result-box" readonly placeholder="Hasil password...">
                     <button class="btn btn-outline-secondary" onclick="copyPassword()">
                         <i class="bi bi-clipboard"></i>
                     </button>
                 </div>
+              <p class="text-center fw-bold mb-0">
+                <i class="bi bi-download fw-bold"></i> 
+                  Download apk <a class="apk" href="https://passgen.bhycero.my.id/PassGen.apk">PassGen</a>
+              </p>
             </div>
         </div>
     </div>
