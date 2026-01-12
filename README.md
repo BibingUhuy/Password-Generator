@@ -68,8 +68,6 @@ Pengguna menentukan:
 - Panjang password
 - Jenis karakter (checkbox)
 
----
-
 ### 2️⃣ Penggabungan Karakter
 Karakter akan digabung berdasarkan pilihan pengguna:
 
@@ -82,8 +80,6 @@ if (symbols) chars += "!@#$%^&*()_+{}[]<>?";
 ```
 
 Jika tidak ada karakter yang dipilih, sistem akan menampilkan peringatan.
-
----
 
 ### 3️⃣ Proses Generate Password
 Password dibuat menggunakan perulangan dan angka acak:
@@ -99,8 +95,6 @@ for (let i = 0; i < length; i++) {
 
 Hasil password langsung ditampilkan ke input field.
 
----
-
 ### 4️⃣ Notifikasi Berhasil Generate
 Setelah password berhasil dibuat, sistem menampilkan toast notification:
 
@@ -109,8 +103,6 @@ new bootstrap.Toast(
     document.getElementById('toastGenerate')
 ).show();
 ```
-
----
 
 ### 5️⃣ Copy Password ke Clipboard
 Saat tombol copy ditekan:
